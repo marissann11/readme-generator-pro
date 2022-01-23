@@ -38,7 +38,17 @@ const questions = [
     {
         type: "list",
         name: "license",
-        choices: ["MIT", "Microsoft", "Apache"],
+        choices: [
+            "MIT License", 
+            "Apache License 2.0", 
+            "Mozilla Public License 2.0",
+            "GNU AGPLv3",
+            "GNU GPLv3",
+            "GNU LGPLv3",
+            "Boost Software License 1.0",
+            "The Unlicense",
+            "No license"
+        ],
         message: "What type of license does your application have?"
     },
     {
@@ -49,21 +59,20 @@ const questions = [
     {
         type: "input",
         name: "tests",
-        message: "What command should be run to run tests?"
+        message: "What command should the user run to run tests?"
     }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync()
+const writeFile = (fileName, response) => {
+    let createMd = generateMarkdown(response);
+    fs.writeFileSync('./dist/README2.md', createMd)
 }
 
 // TODO: Create a function to initialize app
-async function init() {
-    const response = await inquirer.prompt(questions)
-    console.log(response);
-    //...response?
-    writeToFile("README2.md", generateMarkdown(response))
+const init = async () => {
+    const response = await inquirer.prompt(questions);
+    writeFile('README2.md', response);
 }
 
 // Function call to initialize app
