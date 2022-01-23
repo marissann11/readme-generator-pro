@@ -2,10 +2,10 @@
 const renderLicenseBadge = (license) => {
   const licenseUrl = license.replace(" ", "%20");
   return ((license === "No License") ? "" : `![License: ${license}](https://img.shields.io/badge/License-${licenseUrl}-brightgreen)`)
-}
+};
 // Returns license link in TOC if applicable, if not returns an empty string
 const renderLicenseLink = (license) => {
-  return ((license === "No License") ? "" : `* [License](License)`)
+  return ((license === "No License") ? "" : `* [License](#license)`)
 };
 // Returns license section if applicable, if not returns an empty string
 const renderLicenseSection = (license) => {
@@ -15,7 +15,7 @@ const renderLicenseSection = (license) => {
 // Returns Contributor information if applicable, if not states that there are none
 const renderContrSection = (contributors) => {
   return ((!contributors) ? `No Contributors` : `${contributors}`)
-}
+};
 
 //Function to generate markdown for README
 const generateMarkdown = (res) => {
@@ -27,11 +27,11 @@ const generateMarkdown = (res) => {
   ${res.description}
 
   ## Table of Contents
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [Contributions](Contributions)
-  * [Tests](#Tests)
-  * [Questions](#Questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributions](#contributions)
+  * [Tests](#tests)
+  * [Questions](#questions)
   ${renderLicenseLink(res.license)}
 
   ## Installation

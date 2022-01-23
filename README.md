@@ -15,3 +15,5 @@ Based off user input through an inquirer prompt, a README will be generated with
 * Inquirer
 
 ## Walkthrough / Demo
+Click the following if you would like a demo of the application: 
+https://watch.screencastify.com/v/zmJPLkVNPY1aFXbB214q
