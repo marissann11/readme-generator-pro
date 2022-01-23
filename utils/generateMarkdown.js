@@ -1,7 +1,7 @@
 // Returns license badge based on which license is specified, if no license then empty string
 const renderLicenseBadge = (license) => {
   const licenseUrl = license.replace(" ", "%20");
-  return ((license === "No License") ? "" : `![License: ${license}] (https://img.shields.io/badge/License-${licenseUrl}-brightgreen)`)
+  return ((license === "No License") ? "" : `![License: ${license}](https://img.shields.io/badge/License-${licenseUrl}-brightgreen)`)
 }
 // Returns license link in TOC if applicable, if not returns an empty string
 const renderLicenseLink = (license) => {

@@ -1,9 +1,9 @@
 
-  # aethrt
-  ![License: MIT License] (https://img.shields.io/badge/License-MIT%20License-brightgreen)
+  # reF
+  ![License: GNU AGPLv3](https://img.shields.io/badge/License-GNU%20AGPLv3-brightgreen)
 
   ## Description
-  rtsh
+  RG
 
   ## Table of Contents
   * [Installation](#Installation)
@@ -14,25 +14,25 @@
   * [License](License)
 
   ## Installation
-  srth
+  sfgb
 
   ## Usage
-  ath
+  bh
 
   ## Contributors
-  aertg
+  No Contributors
 
-  If you would like to contribute, please visit the [Contributor Covenant](https://www.contributor-covenant.org/)
+  If you would like to contribute, please visit the [Contributor Covenant](https://www.contributor-covenant.org/).
 
   ## Tests
-  rth
+  fth
 
   ## Questions
   Have questions and would like to reach out?
   
-  My Email: rthrt
-  My GitHub: ethrt
+  My Email: ERAG
+  My GitHub: REG
 
   ## License
-  MIT License
+  GNU AGPLv3
   

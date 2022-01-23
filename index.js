@@ -40,12 +40,12 @@ const questions = [
         name: "license",
         choices: [
             "MIT License", 
-            "Apache License 2.0", 
-            "Mozilla Public License 2.0",
+            "Apache 2.0", 
+            "Mozilla Public",
             "GNU AGPLv3",
             "GNU GPLv3",
             "GNU LGPLv3",
-            "Boost Software License 1.0",
+            "Boost Software",
             "The Unlicense",
             "No License"
         ],
