@@ -1,10 +1,9 @@
 
- ![License: MIT License] (https://img.shields.io/badge/License-MIT%20License-brightgreen)
-
-  # aerhaeth
+  # aethrt
+  ![License: MIT License] (https://img.shields.io/badge/License-MIT%20License-brightgreen)
 
   ## Description
-  aeth
+  rtsh
 
   ## Table of Contents
   * [Installation](#Installation)
@@ -15,22 +14,24 @@
   * [License](License)
 
   ## Installation
-  aeth
+  srth
 
   ## Usage
-  aeth
+  ath
 
   ## Contributors
-  No Contributors
+  aertg
+
+  If you would like to contribute, please visit the [Contributor Covenant](https://www.contributor-covenant.org/)
 
   ## Tests
-  aerh
+  rth
 
   ## Questions
-  How to reach me:
+  Have questions and would like to reach out?
   
-  By Email: aerh
-  My GitHub: aeth
+  My Email: rthrt
+  My GitHub: ethrt
 
   ## License
   MIT License

@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// All packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
 
-// TODO: Create an array of questions for user input
+// Array of questions for user input with inquirer prompt
 const questions = [
     {
         type: "input",
@@ -66,17 +66,17 @@ const questions = [
     {
         type: "input",
         name: "tests",
-        message: "What command should the user run to run tests?"
+        message: "Please provide instructions on how the user can run tests on your application, including all necessary commands."
     }
 ];
 
-// TODO: Create a function to write README file
+// writeFileSync function to write README file, placed in "dist" directory
 const writeFile = (fileName, response) => {
     let createMd = generateMarkdown(response);
     fs.writeFileSync('./dist/README.md', createMd)
 }
 
-// TODO: Create a function to initialize app
+// Async await function to initialize app and run inquirer prompt with questions
 const init = async () => {
     const response = await inquirer.prompt(questions);
     writeFile('README.md', response);
