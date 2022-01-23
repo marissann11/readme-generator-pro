@@ -52,9 +52,16 @@ const questions = [
         message: "What type of license does your application have?"
     },
     {
+        type: "confirm",
+        name: "confirmContributors",
+        message: "Would you like to include any contributors for this project?",
+        default: true
+    },
+    {
         type: "input",
         name: "contributors",
-        message: "Who was involved in this application?"
+        message: "Who else was involved in this application?",
+        when: ({ confirmContributors }) => confirmContributors
     },
     {
         type: "input",
@@ -66,13 +73,13 @@ const questions = [
 // TODO: Create a function to write README file
 const writeFile = (fileName, response) => {
     let createMd = generateMarkdown(response);
-    fs.writeFileSync('./dist/README2.md', createMd)
+    fs.writeFileSync('./dist/README.md', createMd)
 }
 
 // TODO: Create a function to initialize app
 const init = async () => {
     const response = await inquirer.prompt(questions);
-    writeFile('README2.md', response);
+    writeFile('README.md', response);
 }
 
 // Function call to initialize app
