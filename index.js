@@ -70,10 +70,12 @@ const questions = [
     }
 ];
 
-// writeFileSync function to write README file, placed in "dist" directory
+// writeFile function to write README file, placed in "dist" directory
 const writeFile = (fileName, response) => {
     let createMd = generateMarkdown(response);
-    fs.writeFileSync('./dist/README.md', createMd)
+    fs.writeFile('./dist/README.md', createMd, err => {
+        err ? console.error(err) : console.log("README.md created!");
+    })
 }
 
 // Async await function to initialize app and run inquirer prompt with questions

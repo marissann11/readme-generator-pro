@@ -29,7 +29,7 @@ const generateMarkdown = (res) => {
   ## Table of Contents
   * [Installation](#Installation)
   * [Usage](#Usage)
-  * [Contributors](Contributors)
+  * [Contributions](Contributions)
   * [Tests](#Tests)
   * [Questions](#Questions)
   ${renderLicenseLink(res.license)}
@@ -40,7 +40,7 @@ const generateMarkdown = (res) => {
   ## Usage
   ${res.usage}
 
-  ## Contributors
+  ## Contributions
   ${renderContrSection(res.contributors)}\n
   If you would like to contribute, please visit the [Contributor Covenant](https://www.contributor-covenant.org/).
 
