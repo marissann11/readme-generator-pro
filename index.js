@@ -47,7 +47,7 @@ const questions = [
             "GNU LGPLv3",
             "Boost Software License 1.0",
             "The Unlicense",
-            "No license"
+            "No License"
         ],
         message: "What type of license does your application have?"
     },
